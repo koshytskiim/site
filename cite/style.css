@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: url('https://img.freepik.com/free-vector/gray-blank-leafy-frame_53876-98882.jpg?semt=ais_hybrid&w=740');
+    background-size: cover;
+}
+
+header {
+    background-color: #e53935;
+    color: white;
+    padding: 20px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #e53935;
+    color: white;
+    display: flex;
+    justify-content: right ;
+    gap: 30px;
+    padding: 20px 0;
+    font-size: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.text {
+    max-width: 50%;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.flag {
+    max-width: 45%;
+}
+
+.flag img {
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.gallery {
+    padding: 40px;
+    text-align: center;
+}
+
+.gallery h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.gallery .back {
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.gallery-grid {
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+}
+
+.gallery-grid img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.gallery-vertical {
+    padding: 40px;
+    text-align: center;
+}
+
+.gallery-vertical h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.gallery-vertical img {
+    width: 90%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
+.section {
+    padding: 40px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.section p{
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.section ul{
+    max-width: 900px;
+    text-align: left;
+    font-size: 15px;
+}
+
+.section img {
+    position: relative;
+    left: 500px;
+    margin-top: 20px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text, .flag {
+        max-width: 100%;
+    }
+{
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+@media (max-width: 768px) {
+    header {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .text, .flag {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .gallery h1 {
+        font-size: 32px;
+    }
+
+    .gallery-vertical h2,
+    .section h2 {
+        font-size: 28px;
+    }
+
+    .section p,
+    .section ul {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .section img {
+        position: static;
+        margin: 20px auto 0;
+        display: block;
+    }
+
+    .banner {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .back-button {
+        width: 100%;
+        text-align: center;
+    }
+}
